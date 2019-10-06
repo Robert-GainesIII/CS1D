@@ -30,7 +30,8 @@ void removeSpaces(char *str)
     str[count] = '\0'; 
 } 
 
-bool isPalRec(string word, int firstC, int lastC) 
+bool isPalRec(char str[],  
+              int firstC, int lastC) 
 { 
     // If there is only one character 
     if (firstC == lastC) 
@@ -38,7 +39,7 @@ bool isPalRec(string word, int firstC, int lastC)
   
     // If first and last 
     // characters do not match 
-    if (word.at(firstC) != word.at(lastC))
+    if (str[firstC] != str[lastC]) 
     return false; 
   
     // If there are more than  
@@ -46,7 +47,7 @@ bool isPalRec(string word, int firstC, int lastC)
     // middle substring is also  
     // palindrome or not. 
     if (firstC < lastC + 1) 
-    return isPalRec(word, firstC + 1, lastC - 1); 
+    return isPalRec(str, firstC + 1, lastC - 1); 
   
     return true; 
 } 
@@ -65,20 +66,10 @@ bool isPalindrome(string & word)
     return false; //default return false
 }
 
-bool isPalidromeRec(string & word){
-
-    int length = word.size();
-    if(length == 0 || length == 1)return true;//is palindrome if only one or none characters 
-
-    bool result = isPalRec(word, 0, length-1);
-    return result;
-}
-
 int main(){
     cout << "Lab2 Recursive functions" << endl;
     cout << "8/21/19 CS1D T TH 5-7" << endl;
     cout << "Robert Gaines" << endl;
-    cout << "Arthur Siu" << endl;
     cout << "------------------------" << endl;
     cout << "Description of Lab: To demonstrate the ability to use and understand recursion to solve complex logic problems." << endl << endl;
     int size = 10;
@@ -104,7 +95,7 @@ int main(){
     
     for(int i =0; i < size; i++){
         cout << i << ") ";
-        cout << " Is " << data[i] << " a palidrome? " << std::boolalpha << isPalidromeRec(data[i]);
+        cout << " Is " << data[i] << " a palidrome? " << std::boolalpha << isPalindrome(data[i]);
         cout << endl;
     }
 

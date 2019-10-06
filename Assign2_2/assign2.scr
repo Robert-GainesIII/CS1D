@@ -1,0 +1,81 @@
+Script started on Mon Sep 16 16:02:36 2019
+[?1034hbash-3.2$ ./start
+Part A
+Stack 1: 
+	Bill
+	JoAnn
+	Eric
+	Sonny
+	Jennifer
+	Alan
+	Mark
+
+
+Stack 2: 
+	8.445
+	123.123
+	99.99
+	888.55
+	44.44
+	983.3
+
+
+Part B: 
+Stack 1 after deletion of Sonny
+	Jennifer
+	Alan
+	Mark
+
+
+Stack 2 after deletion of 99.99
+	888.55
+	44.44
+	983.3
+
+
+Part C: 
+Stack 1 as linked list: 
+bill 
+JoAnn 
+Eric 
+Sonny 
+Jennifer 
+Alan 
+Mark 
+
+Stack 2 as linked list: 
+8.445 
+123.123 
+99.99 
+888.55 
+44.44 
+983.3 
+
+
+Part D: 
+Stack 1 as list after deletion of Sonny
+Jennifer 
+Alan 
+Mark 
+
+Stack 2 as list after deletion of 99.99
+888.55 
+44.44 
+983.3 
+
+Part F: 
+{2x - 8) (12x + 6)is Balanced.
+{{8x+5) - 5x[9x+3]})is not Balanced.
+{2x + 5} (6x+4)is Balanced.
+(((4x+8) - x[4x+3])))is not Balanced.
+[(5x - 5) - 4x[6x + 2]]is Balanced.
+{(8x+5) - 6x[9x+3]]is Balanced.
+(12x + 6) (2x - 4)is Balanced.
+bash-3.2$ end 
+bash: end: command not found
+bash-3.2$ quit
+bash: quit: command not found
+bash-3.2$ exit
+exit
+
+Script done on Mon Sep 16 16:02:51 2019
